@@ -10,16 +10,7 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css'
 
-
 const store = configureStore();
-
-
-store.dispatch(addExpense({description: 'Water bill', amount: 3425, createdAt: 6500}));
-store.dispatch(addExpense({description: 'Gas bill', amount: 2140, createdAt: 8654}));
-store.dispatch(addExpense({description: 'Rent', amount: 109500, createdAt: 5326}));
-
-
-const state = store.getState();
 
 const jsx = (
   <Provider store={store}>
